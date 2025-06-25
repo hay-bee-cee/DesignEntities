@@ -1,4 +1,6 @@
 /* ====== Base Styles ====== */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
 body {
     margin: 0;
     padding: 0;
@@ -7,7 +9,6 @@ body {
     flex-direction: column;
     font: 16px 'Montserrat', sans-serif;
     color: aliceblue;
-    background: #FBFCF8 url('images/20250606_203520.png') center/cover no-repeat fixed;
 }
 
 /* ====== Container ====== */
@@ -197,7 +198,7 @@ footer {
         text-align: center;
     }
     .hero-images {
-        display: flex;
+        display: none;
         justify-content: center;
         align-items: center;
         gap: 1em;
