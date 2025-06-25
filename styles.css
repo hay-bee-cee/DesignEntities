@@ -213,11 +213,16 @@ footer {
         margin: 0;
     }
 
-    .hero-btn,
-.hero-btn1 {
+    .hero-btn
+    {
         padding: 0.5em 1.5em;
         font-size: 0.9rem;
     }
+
+    .hero-btn1{
+        display:none
+    }
+
     .hero-text h1 {
         font-size: 1.8rem;
     }
