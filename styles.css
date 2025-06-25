@@ -191,8 +191,9 @@ footer {
 
 /* ====== Responsive Styles (Mobile View) ====== */
 @media (max-width: 1100px) {
+    body {background:aliceblue;}
     .hero {
-        min-height: fit-content;
+        position:fixed
     }
     .hero-content {
         flex-direction: column;
