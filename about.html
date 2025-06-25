@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BEE & Design Entities - Your one-stop solution for creative design, Web Development and branding.">
+    <meta name="keywords" content="design, web, development, dev, branding, creative, BEE & Design Entities">
+    <meta name="author" content="BEE & Design Entities">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" href="images/20250116_221452.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <title>About Us</title>
+    <style>
+        /* ====== Base Styles ====== */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background: #fdfdfd;
+        }
+
+        section {
+            padding: 80px 20px;
+        }
+
+        .container1 {
+            max-width: 1000px;
+            margin: auto;
+            text-align: center;
+        }
+
+        h1, h2 {
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 1.15em;
+            margin-bottom: 10px;
+        }
+
+        /* ====== Section Backgrounds ====== */
+        .intro {
+            background: linear-gradient(135deg, #fdfbfbe3 0%, #ebedeee1 100%);
+            margin-top: 5rem;
+        }
+
+        .mission {
+            background: #f5f7fa;
+        }
+
+        .what-we-do {
+            background: #ffffff;
+        }
+
+        .founders {
+            background: #eaeaea;
+        }
+
+        /* ====== Founders Grid ====== */
+        .founders-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .founder {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.7s ease;
+        }
+
+        .founder:hover {
+            transform: translateY(-20px);
+        }
+
+        .founder h3 {
+            color: #222;
+            margin-bottom: 10px;
+        }
+
+        .founder p {
+            font-size: 0.95em;
+            color: #555;
+        }
+
+        /* ====== Core Values Section ====== */
+        .values {
+            background: #fdfdfd;
+        }
+
+        .values p {
+            font-size: 1.05em;
+            margin: 5px 0;
+        }
+
+        /* ====== Responsive Styles ====== */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ====== Header Section ====== -->
+    <header>
+        <div class="container">
+            <!-- Logo -->
+            <div>
+                <a href="index.html">
+                    <img src="images/20250116_221452.png" alt="Design Entities Logo" class="logo">
+                </a>
+            </div>
+            <!-- Navigation & Hamburger Icon -->
+            <nav>
+                <!-- Hamburger Icon for Mobile Navigation -->
+                <div class="hamburger" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul id="nav-menu">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="service.html">Services</a>
+                    </li>
+                    <li class="current">
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="faq.html">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div> 
+    </header>
+
+    <!-- ====== Main Content ====== -->
+    <main>
+        <!-- About Our Brand Section -->
+        <section class="intro">
+            <div class="container1">
+                <h1>About Our Brand</h1>
+                <p>
+                    We are a dynamic duo—<strong>Oladipupo Christmike</strong> and <strong>Caleb Abraham</strong>—on a mission to craft meaningful
+                    digital experiences. Combining creativity and precision, we turn bold ideas into real-world results.
+                </p>
+            </div>
+        </section>
+
+        <!-- What We Do Section -->
+        <section class="what-we-do">
+            <div class="container1">
+                <h2>What We Do</h2>
+                <p>
+                    We specialize in website development, UI/UX design, branding, and graphic designs.
+                    Whether you’re a startup looking to make a bold entrance or an established brand in need of a digital upgrade,
+                    we tailor solutions to your vision and goals.
+                </p>
+            </div>
+        </section>
+
+        <!-- Meet the Founders Section -->
+        <section class="founders">
+            <div class="container1">
+                <h2>Meet the Founders</h2>
+                <div class="founders-grid">
+                    <div class="founder">
+                        <h3>Oladipupo Christmike</h3>
+                        <p>
+                            Brand's Founder & Creative Lead — ChristMike brings visionary design and brand strategy,
+                            ensuring every project looks exceptional and resonates deeply with its audience.
+                        </p>
+                    </div>
+                    <div class="founder">
+                        <h3>Caleb Abraham</h3>
+                        <p>
+                            Founder of BEE & Brand's Partner — Caleb fuses innovation and technical excellence,
+                            building seamless, robust experiences that drive tangible results.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Values Section -->
+        <section class="values">
+            <div class="container1">
+                <h2>Our Core Values</h2>
+                <p><strong>Innovation:</strong> Embrace creativity and push boundaries.</p>
+                <p><strong>Collaboration:</strong> Work together to exceed expectations.</p>
+                <p><strong>Integrity:</strong> Operate with honesty and reliability.</p>
+                <p><strong>Excellence:</strong> Deliver nothing but the best.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- ====== Footer ====== -->
+    <footer>
+        Design-Entities & BEE, Copyright &copy; 2025
+    </footer>
+
+    <!-- ====== JavaScript for Hamburger Menu ====== -->
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('nav-menu');
+            menu.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>

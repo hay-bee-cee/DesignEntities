@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BEE & Design Entities - Your one-stop solution for creative design, Web Development and branding.">
+    <meta name="keywords" content="design, web, development, dev, branding, creative, BEE & Design Entities">
+    <meta name="author" content="BEE & Design Entities">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Favicon -->
+    <link rel="icon" href="images/20250116_221452.png" type="image/x-icon">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Contact Us | Design Creatives & BEE</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* ====== Reset and Base Styles ====== */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f8f9fa;
+            color: #333;
+        }
+
+        /* ====== Contact Container ====== */
+        .container1 {
+            max-width: 800px;
+            margin: 4rem auto;
+            padding: 40px;
+            background: #fff;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+            border-radius: 12px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #0a3d62;
+            margin-bottom: 30px;
+        }
+
+        /* ====== Contact Form ====== */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        input, textarea {
+            padding: 15px;
+            font-size: 1em;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            resize: none;
+        }
+
+        textarea {
+            min-height: 150px;
+        }
+
+        button {
+            background: #054fbe;
+            color: #fff;
+            border: none;
+            padding: 15px;
+            font-size: 1em;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background: #0766f5;
+        }
+
+        /* ====== Responsive Styles ====== */
+        @media (max-width: 600px) {
+            .container1 {
+                padding: 30px 20px;
+                margin: 2rem 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ====== Header Section ====== -->
+    <header>
+        <div class="container">
+            <!-- Logo -->
+            <div>
+                <a href="index.html">
+                    <img src="images/20250116_221452.png" alt="Design Entities Logo" class="logo">
+                </a>
+            </div>
+            <!-- Navigation & Hamburger Icon -->
+            <nav>
+                <!-- Hamburger Icon for Mobile Navigation -->
+                <div class="hamburger" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul id="nav-menu">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="service.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="faq.html">FAQ</a>
+                    </li>
+                    <li class="current">
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>    
+    </header>
+
+    <!-- ====== Main Content ====== -->
+    <main>
+        <div class="container1">
+            <h1>Contact Us</h1>
+            <form action="https://formsubmit.co/calebabrahamugorji@gmail.com" method="POST">
+                <!-- FormSubmit hidden config -->
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="box">
+                <!-- Optional redirect -->
+                <!-- <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html"> -->
+
+                <!-- Contact Inputs -->
+                <input type="text" name="name" placeholder="Your Name" required />
+                <input type="email" name="email" placeholder="Your Email" required />
+                <textarea name="message" placeholder="Your Message..." required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- ====== Footer ====== -->
+    <footer>
+        Design-Entities & BEE, Copyright &copy; 2025
+    </footer>
+
+    <!-- ====== JavaScript for Hamburger Menu ====== -->
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('nav-menu');
+            menu.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>

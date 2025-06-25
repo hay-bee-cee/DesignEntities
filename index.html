@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BEE & Design Entities - Your one-stop solution for creative design, Web Development and branding.">
+    <meta name="keywords" content="design, web, development, dev, branding, creative, BEE & Design Entities">
+    <meta name="author" content="BEE & Design Entities">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" href="images/20250116_221452.png" type="image/x-icon">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Design Entities | Home</title>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <!-- Logo -->
+            <div>
+                <a href="index.html">
+                    <img src="images/20250116_221452.png" alt="Design Entities Logo" class="logo">
+                </a>
+            </div>
+            <!-- Hamburger Icon for Mobile Navigation -->
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <!-- Navigation Menu -->
+            <nav>
+                <ul id="nav-menu">
+                    <li class="current">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="service.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="faq.html">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div> 
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <!-- Hero Images Row -->
+                <div class="hero-images">
+                    <a href="about.html">
+                        <img src="images/20250116_221452.png" alt="Design Entities logo" class="hero-image">
+                    </a>
+                    <a href="about.html">
+                        <img src="images/20241110_082313.jpg" alt="BEE logo" class="hero-image2">
+                    </a>
+                </div>
+                <!-- Hero Text -->
+                <div class="hero-text">
+                    <h1>WEBSITE DEVELOPMENT AND</h1>
+                    <h1>GRAPHIC DESIGNS</h1>
+                    <p class="hero-subtitle">Transforming Ideas into Digital Realities...</p>
+                    <a href="service.html" class="hero-btn">See Our Services</a>
+                    <a href="www.whatsapp.com" class="hero-btn1">Contact Us</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- JavaScript for Hamburger Menu -->
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('nav-menu');
+            menu.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BEE & Design Entities - Your one-stop solution for creative design, Web Development and branding.">
+    <meta name="keywords" content="design, web, development, dev, branding, creative, BEE & Design Entities">
+    <meta name="author" content="BEE & Design Entities">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" href="images/20250116_221452.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <title>Our Services</title>
+    <style>
+        /* ====== Reset and Base Styles ====== */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        section {
+            padding: 60px 20px;
+        }
+
+        .container1 {
+            max-width: 1100px;
+            margin: auto;
+            text-align: center;
+            margin-top: 4rem;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+            color: #0a3d62;
+        }
+
+        p {
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        /* ====== Tabs ====== */
+        .tabs {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+
+        .tab {
+            padding: 10px 20px;
+            border: none;
+            background: #dfe6e9;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .tab.active {
+            background: #0a3d62;
+            color: #fff;
+        }
+
+        /* ====== Gallery Grid ====== */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-item {
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-10px);
+        }
+
+        /* ====== Lightbox ====== */
+        .lightbox {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 999;
+            display: none;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 80%;
+            border-radius: 8px;
+            margin-top: 2rem;
+        }
+
+        .lightbox.active {
+            display: flex;
+        }
+
+        /* ====== Responsive Styles ====== */
+        @media (max-width: 600px) {
+            .tab {
+                font-size: 0.9em;
+                padding: 8px 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ====== Header Section ====== -->
+    <header>
+        <div class="container">
+            <!-- Logo -->
+            <div>
+                <a href="index.html">
+                    <img src="images/20250116_221452.png" alt="Design Entities Logo" class="logo">
+                </a>
+            </div>
+            <!-- Navigation & Hamburger Icon -->
+            <nav>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul id="nav-menu">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="current">
+                        <a href="service.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="faq.html">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>    
+    </header>
+
+    <!-- ====== Main Content ====== -->
+    <main>
+        <section>
+            <div class="container1">
+                <h1>Our Services</h1>
+                <p>Explore our creative work in Graphic Design and Web Development.</p>
+
+                <!-- Filter Tabs -->
+                <div class="tabs">
+                    <button class="tab active" data-filter="all">All</button>
+                    <button class="tab" data-filter="graphic">Graphic Design</button>
+                    <button class="tab" data-filter="web">Web Projects</button>
+                </div>
+
+                <!-- Gallery Grid -->
+                <div class="gallery-grid">
+                    <!-- Graphic Design Items -->
+                    <div class="gallery-item" data-category="graphic">
+                        <img src="images/design/graphic1.jpg" alt="Graphic Design 1" />
+                    </div>
+                    <div class="gallery-item" data-category="graphic">
+                        <img src="images/design/graphic2.jpg" alt="Graphic Design 2" />
+                    </div>
+                    <div class="gallery-item" data-category="graphic">
+                        <img src="images/design/graphic3.jpg" alt="Graphic Design 3" />
+                    </div>
+                    <div class="gallery-item" data-category="graphic">
+                        <img src="images/design/graphic4.jpg" alt="Graphic Design 4" />
+                    </div>
+                    <div class="gallery-item" data-category="graphic">
+                        <img src="images/design/graphic5.jpg" alt="Graphic Design 5" />
+                    </div>
+                    <div class="gallery-item" data-category="graphic">
+                        <img src="images/design/graphic6.jpg" alt="Graphic Design 6" />
+                    </div>
+                    <div class="gallery-item" data-category="graphic">
+                        <img src="images/design/graphic7.jpg" alt="Graphic Design 7" />
+                    </div>
+                    <div class="gallery-item" data-category="graphic">
+                        <img src="images/design/graphic8.jpg" alt="Graphic Design 8" />
+                    </div>
+                    <div class="gallery-item" data-category="graphic">
+                        <img src="images/design/graphic9.jpeg" alt="Graphic Design 9" />
+                    </div>
+                    <div class="gallery-item" data-category="graphic">
+                        <img src="images/design/graphic10.jpeg" alt="Graphic Design 10" />
+                    </div>
+
+                    <!-- Web Projects -->
+                    <div class="gallery-item" data-category="web">
+                        <img src="images/web/web 1.jpg" alt="Web Project 1" />
+                    </div>
+                    <div class="gallery-item" data-category="web">
+                        <img src="images/web/web 2.jpg" alt="Web Project 2" />
+                    </div>
+                    <div class="gallery-item" data-category="web">
+                        <img src="images/web/web 3.jpg" alt="Web Project 3" />
+                    </div>
+                    <div class="gallery-item" data-category="web">
+                        <img src="images/web/web 4.jpg" alt="Web Project 4" />
+                    </div>
+                    <div class="gallery-item" data-category="web">
+                        <img src="images/web/web 5.jpg" alt="Web Project 5" />
+                    </div>
+                    <div class="gallery-item" data-category="web">
+                        <img src="images/web/web 6.jpg" alt="Web Project 6" />
+                    </div>
+                    <div class="gallery-item" data-category="web">
+                        <img src="images/web/web 7.jpg" alt="Web Project 7" />
+                    </div>
+                    <div class="gallery-item" data-category="web">
+                        <img src="images/web/web 8.jpg" alt="Web Project 8" />
+                    </div>
+                    <div class="gallery-item" data-category="web">
+                        <img src="images/web/web 9.jpg" alt="Web Project 9" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lightbox Modal for Image Preview -->
+        <div class="lightbox" id="lightbox">
+            <img src="" alt="Preview" />
+        </div>
+    </main>
+
+    <!-- ====== Footer ====== -->
+    <footer>
+        Design-Entities & BEE, Copyright &copy; 2025
+    </footer>
+
+    <!-- ====== JavaScript for Tabs, Lightbox, and Hamburger ====== -->
+    <script>
+        // Hamburger menu toggle
+        function toggleMenu() {
+            const menu = document.getElementById('nav-menu');
+            menu.classList.toggle('show');
+        }
+
+        // Filter Logic for Tabs
+        const tabs = document.querySelectorAll('.tab');
+        const items = document.querySelectorAll('.gallery-item');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                tabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+
+                const filter = tab.getAttribute('data-filter');
+
+                items.forEach(item => {
+                    const category = item.getAttribute('data-category');
+                    item.style.display = (filter === 'all' || filter === category) ? 'block' : 'none';
+                });
+            });
+        });
+
+        // Lightbox Logic
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = lightbox.querySelector('img');
+
+        items.forEach(item => {
+            item.addEventListener('click', () => {
+                const imgSrc = item.querySelector('img').src;
+                lightboxImg.src = imgSrc;
+                lightbox.classList.add('active');
+            });
+        });
+
+        lightbox.addEventListener('click', () => {
+            lightbox.classList.remove('active');
+            lightboxImg.src = '';
+        });
+    </script>
+</body>
+</html>
