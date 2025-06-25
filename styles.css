@@ -1,6 +1,6 @@
 /* ====== Base Styles ====== */
-* { box-sizing: border-box; margin: 0; padding: 0; }
 
+* { box-sizing: border-box; margin: 0; padding: 0; }
 body {
     margin: 0;
     padding: 0;
@@ -9,6 +9,7 @@ body {
     flex-direction: column;
     font: 16px 'Montserrat', sans-serif;
     color: aliceblue;
+    background: #FBFCF8 url('images/20250606_203520.png') center/cover no-repeat fixed;
 }
 
 /* ====== Container ====== */
@@ -198,7 +199,7 @@ footer {
         text-align: center;
     }
     .hero-images {
-        display: none;
+        display: flex;
         justify-content: center;
         align-items: center;
         gap: 1em;
@@ -210,6 +211,15 @@ footer {
         max-width: 120px;
         height: 100px;
         margin: 0;
+    }
+
+    .hero-btn,
+.hero-btn1 {
+        padding: 0.5em 1.5em;
+        font-size: 0.9rem;
+    }
+    .hero-text h1 {
+        font-size: 1.8rem;
     }
     
     .hero-text {
